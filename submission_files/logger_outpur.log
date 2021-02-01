@@ -1,0 +1,43 @@
+2021-02-01T11:03:27.568Z INFO  - Starting container for site
+2021-02-01T11:03:27.568Z INFO  - docker run -d -p 8832:8000 --name udacity-project-one_2_1a1f4534 -e WEBSITE_SITE_NAME=udacity-project-one -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=udacity-project-one.azurewebsites.net -e WEBSITE_INSTANCE_ID=30e4e8a073d6b23893ad40ea1f2ce810eded8ffe238ffb654d64fec398cc53ed -e HTTP_LOGGING_ENABLED=1 appsvc/python:3.8_20201112.3
+2021-02-01T11:03:32.198Z INFO  - Initiating warmup request to container udacity-project-one_2_1a1f4534 for site udacity-project-one
+2021-02-01T11:03:38.831Z INFO  - Container udacity-project-one_2_1a1f4534 for site udacity-project-one initialized successfully and is ready to serve requests.
+2021-02-01T11:03:31.344575145Z
+2021-02-01T11:03:31.344625245Z   _____
+2021-02-01T11:03:31.344630145Z   /  _  \ __________ _________   ____
+2021-02-01T11:03:31.344633345Z  /  /_\  \___   /  |  \_  __ \_/ __ \
+2021-02-01T11:03:31.344636545Z /    |    \/    /|  |  /|  | \/\  ___/
+2021-02-01T11:03:31.344639745Z \____|__  /_____ \____/ |__|    \___  >
+2021-02-01T11:03:31.344643045Z         \/      \/                  \/
+2021-02-01T11:03:31.344646245Z
+2021-02-01T11:03:31.344649045Z A P P   S E R V I C E   O N   L I N U X
+2021-02-01T11:03:31.344652045Z
+2021-02-01T11:03:31.344654845Z Documentation: http://aka.ms/webapp-linux
+2021-02-01T11:03:31.344657645Z Python 3.8.6
+2021-02-01T11:03:31.344660545Z Note: Any data outside '/home' is not persisted
+2021-02-01T11:03:31.520567997Z Starting OpenBSD Secure Shell server: sshd.
+2021-02-01T11:03:31.585332353Z App Command Line not configured, will attempt auto-detect
+2021-02-01T11:03:31.585540153Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2021-02-01T11:03:31.643641803Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2021-02-01T11:03:31.646124905Z Build Operation ID: |pCanZs+K+6Q=.6dcb248d_
+2021-02-01T11:03:31.646928706Z Oryx Version: 0.2.20201112.1, Commit: a120bb248aa8d208ca5e02d7d9d075196e79cffd, ReleaseTagName: 20201112.1
+2021-02-01T11:03:32.524599363Z Detected an app based on Flask
+2021-02-01T11:03:32.736122445Z Generating `gunicorn` command for 'application:app'
+2021-02-01T11:03:33.117112074Z Writing output script to '/opt/startup/startup.sh'
+2021-02-01T11:03:33.661283043Z Using packages from virtual environment pythonenv3.8 located at /home/site/wwwroot/pythonenv3.8.
+2021-02-01T11:03:33.662055444Z Updated PYTHONPATH to ':/home/site/wwwroot/pythonenv3.8/lib/python3.8/site-packages'
+2021-02-01T11:03:34.665807909Z [2021-02-01 11:03:34 +0000] [38] [INFO] Starting gunicorn 20.0.4
+2021-02-01T11:03:34.674419817Z [2021-02-01 11:03:34 +0000] [38] [INFO] Listening at: http://0.0.0.0:8000 (38)
+2021-02-01T11:03:34.674992117Z [2021-02-01 11:03:34 +0000] [38] [INFO] Using worker: sync
+2021-02-01T11:03:34.684503026Z [2021-02-01 11:03:34 +0000] [40] [INFO] Booting worker with pid: 40
+2021-02-01T11:03:36.387039394Z App started
+2021-02-01T11:03:38.832206519Z 172.16.0.1 - - [01/Feb/2021:11:03:38 +0000] "GET /robots933456.txt HTTP/1.1" 404 232 "-" "HealthCheck/1.0"
+2021-02-01T11:04:35.483546328Z Login has FAILED : Invalid username or password
+2021-02-01T11:04:35.529459474Z 172.16.0.1 - - [01/Feb/2021:11:04:35 +0000] "POST /login HTTP/1.1" 302 219 "http://udacity-project-one.azurewebsites.net/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+2021-02-01T11:04:35.964735213Z 172.16.0.1 - - [01/Feb/2021:11:04:35 +0000] "GET /login HTTP/1.1" 200 3016 "http://udacity-project-one.azurewebsites.net/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+2021-02-01T11:04:46.952749559Z Login is SUCCESSFULL!
+2021-02-01T11:04:47.022193725Z 172.16.0.1 - - [01/Feb/2021:11:04:47 +0000] "POST /login HTTP/1.1" 302 217 "http://udacity-project-one.azurewebsites.net/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+2021-02-01T11:04:47.404733389Z 172.16.0.1 - - [01/Feb/2021:11:04:47 +0000] "GET /home HTTP/1.1" 200 3750 "http://udacity-project-one.azurewebsites.net/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+2021-02-01T11:04:52.958132762Z User logout is SUCCESSFULL!
+2021-02-01T11:04:52.999122143Z 172.16.0.1 - - [01/Feb/2021:11:04:52 +0000] "GET /logout HTTP/1.1" 302 219 "http://udacity-project-one.azurewebsites.net/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+2021-02-01T11:04:53.377605994Z 172.16.0.1 - - [01/Feb/2021:11:04:53 +0000] "GET /login HTTP/1.1" 200 2875 "http://udacity-project-one.azurewebsites.net/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
